@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="search.css">
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">Fight COVID</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <!-- Navbar Right Side -->
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="#">Login</a>
+              <a class="nav-item nav-link" href="#">Register</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+	<div class="container">
+		<hr>
+		    <h1>Ask Your question by putting up a question in the platform</h1>
+			<form method="POST" action='createpost/'>
+			    <label for="">Enter title</label> <br> 
+			    <input class="search-box" type="text" name="title" id="" placeholder='Enter Question title'>  
+			    <br> <br>
+			    <label for="">Enter Description</label> <br> <input class="search-box" type="text" name="description" id="" placeholder="Enter Question  Description"> 
+			    <br> <br>
+			    <input class="btnn1" type="submit" value="Submit">
+			    <hr>
+			</form>
+	</div>
+	<div class="container">
+		<form action='searchbypostname/' method="GET">
+	    	<input class="search-box" type="text" name='postname' placeholder='Search by postname'>
+	        <button class="btnn2"><i class="fa fa-search"></i></button>
+		</form>
+		<br> <hr> <br>
+		<div class="post">
+			<h2> Title of the post is:- <i><u>{{post.title}}</u></i></h2> 
+			<h4> Description of the post is:-  <i><u>{{post.description}}</u></i></h4> 
+			<h4> Posted by:-  <i><u>{{post.user.user.username}}</u></i></h4> 
+		</div>
+		<br>
+		<button class="search-box2"><a href="#">Answer this post</a></button>
+		<button class="search-box3"><a href="#"> View Replies <a></button>
+		<br> <br>
+		<div class="container">
+			<div class="post">
+				<h2> {{reply.reply}} <br> it got {{reply.upvote}} no of upvotes and <br> {{reply.downvote}} no of downvotes <h2>
+			</div>
+			<br>
+			<button class="btnn3"><a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i><a></button>
+			<button class="btnn4"><a href="#"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a></button>
+		</div>
+		<br> <hr> <br>
+		<div>
+			<form method="POST">
+			<label for="">Enter Answer</label>
+			<br>
+		    <input class="search-box" type="text" name="answer" id="" placeholder="Enter Answer">  <br> <br>
+		    <input class="btnn1" type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+
+	<hr>
+</body>
+</html>
