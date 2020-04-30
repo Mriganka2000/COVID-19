@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Liph</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+	    <!-- <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}" role="alert"></div> -->
+	    <div class="container1">
+	    	<div>
+	    		<a href="#" class="btn btn-primary btn-lg">Create Shop</a>
+			    <a href="#" class="btn btn-primary btn-lg">Update Shop</a> 
+			    <a href="#" class="btn btn-primary btn-lg"> See all Notifiactions </a>
+			    <a href="#" class="btn btn-primary btn-lg">ViewRequests </a>
+			    <br> <br>
+
+				<br> <br>
+				<form method = 'POST' action = 'searchbyLocation' > 
+				    <input class="box" type="text" name="search" id="" placeholder="SearchByLocation">
+				    <input class="btnn" type="submit" value="Submit">
+				</form>
+				<form method='POST' action = 'searchbyType'>
+				    <input type="radio" name="search" value=Grocery id="" > Grocery
+				    <input type="radio" name="search" value = Medical-Store id=""> Medical-Store
+				    <input type="radio" name="search"  value= "Food" id=""> Food
+				    <input class="btnn" type="submit" value="Submit">
+				</form>
+				<br>
+				<br>
+	    	</div>
+	    </div>
+	    <div class="container2">
+	    	<hr>
+		        <h1>{{shop.shop_name}}</h1>
+		        <h2> Owner Name :-  {{shop.owner.user.username}} </h2>
+		        <h3> Shop Location:-  {{shop.location}} </h3>
+		        <h3> Opening Time:- {{shop.opening_time}} </h3>
+		        <h3> Closing Time:- {{shop.closing_time}} </h3>
+		        <h3> Type :- {{shop.shop_type}} </h3>
+		        <button class="search-box2"><a href="3"> PlaceRequest </a></button>
+		    <hr>
+		    <hr>
+		        <h1>{{shop.shop_name}}</h1>
+		        <h2> Owner Name :-  {{shop.owner.user.username}} </h2>
+		        <h3> Shop Location:-  {{shop.location}} </h3>
+		        <h3> Opening Time:- {{shop.opening_time}} </h3>
+		        <h3> Closing Time:- {{shop.closing_time}} </h3>
+		        <h3> Type :- {{shop.shop_type}} </h3>
+		        <button class="search-box2"><a href="#"> PlaceRequest </a></button>
+		    <hr>
+		    <hr>
+		        <h1>{{shop.shop_name}}</h1>
+		        <h2> Owner Name :-  {{shop.owner.user.username}} </h2>
+		        <h3> Shop Location:-  {{shop.location}} </h3>
+		        <h3> Opening Time:- {{shop.opening_time}} </h3>
+		        <h3> Closing Time:- {{shop.closing_time}} </h3>
+		        <h3> Type :- {{shop.shop_type}} </h3>
+		        <button class="search-box2"><a href="#"> PlaceRequest </a></button>
+		    <hr>
+		    <hr>
+		        <h1>{{shop.shop_name}}</h1>
+		        <h2> Owner Name :-  {{shop.owner.user.username}} </h2>
+		        <h3> Shop Location:-  {{shop.location}} </h3>
+		        <h3> Opening Time:- {{shop.opening_time}} </h3>
+		        <h3> Closing Time:- {{shop.closing_time}} </h3>
+		        <h3> Type :- {{shop.shop_type}} </h3>
+		        <button class="search-box2"><a href="#"> PlaceRequest </a></button>
+		    <hr>
+		    <hr>
+		        <h1>{{shop.shop_name}}</h1>
+		        <h2> Owner Name :-  {{shop.owner.user.username}} </h2>
+		        <h3> Shop Location:-  {{shop.location}} </h3>
+		        <h3> Opening Time:- {{shop.opening_time}} </h3>
+		        <h3> Closing Time:- {{shop.closing_time}} </h3>
+		        <h3> Type :- {{shop.shop_type}} </h3>
+		        <button class="search-box2"><a href="#"> PlaceRequest </a></button>
+		    <hr>
+		    <hr>
+		        <h1>{{shop.shop_name}}</h1>
+		        <h2> Owner Name :-  {{shop.owner.user.username}} </h2>
+		        <h3> Shop Location:-  {{shop.location}} </h3>
+		        <h3> Opening Time:- {{shop.opening_time}} </h3>
+		        <h3> Closing Time:- {{shop.closing_time}} </h3>
+		        <h3> Type :- {{shop.shop_type}} </h3>
+		        <button class="search-box2"><a href="#"> PlaceRequest </a></button>
+		    <hr>
+		    <hr>
+		        <h1>{{shop.shop_name}}</h1>
+		        <h2> Owner Name :-  {{shop.owner.user.username}} </h2>
+		        <h3> Shop Location:-  {{shop.location}} </h3>
+		        <h3> Opening Time:- {{shop.opening_time}} </h3>
+		        <h3> Closing Time:- {{shop.closing_time}} </h3>
+		        <h3> Type :- {{shop.shop_type}} </h3>
+		        <button class="search-box2"><a href="#"> PlaceRequest </a></button>
+		    <hr>
+		    
+	    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

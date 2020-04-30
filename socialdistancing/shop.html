@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shop</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="shop.css">
+</head>
+<body>
+	<!-- <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}" role="alert">{{ message }}</div> -->
+	    <div class="container">
+	    	<h1>Enter your Shop details:- </h1> <hr> <br>
+	    	<form method='POST' >
+		        <input class="box" type="text"  name="shop_name"      placeholder = "Enter your shop name"> <br> <br> <br>
+		        <input class="box1" type="time"  name="opening_time"   placeholder= "Enter Your Shop's Opening time"> <br> <br> <br>
+		        <input class="box1" type="time"  name="closing_time"   placeholder="Enter Your Shop's Closing time"> <br> <br> <br>
+		        <input class="box" type="text"  name="location"       placeholder='Enter your location' id=""> <br> <br> <br>
+		        <input type="radio" name="shop_type"      value="Grocery" id=""> Grocery <br> <br> <br>
+		        <input type="radio" name="shop_type"      value="Medical-Store" id=""> Medical-Store <br> <br> <br>
+		        <input type="radio" name="shop_type"      value="Food" id=""> Food <br> <br> <br>
+		        <input class="btnn" type="submit" value="Submit">
+		    </form>
+		    <br> <br>
+		    <form  method='POST'>
+		    	<label for="">Enter Your Shop's opening Time</label>
+		        <input class="box1" type="time"  name="opening_time"   placeholder= "Enter Your Shop's Opening time"> <br> <br> 
+		        <label for="">Enter Your Shop's closing Time</label>
+		        <input class="box1" type="time"  name="closing_time"   placeholder="Enter Your Shop's Closing time">
+		    	<br> <br>    
+		    	<input class="btnn" type="submit" value="Submit">
+		    	<br>
+	    	</form>
+	    </div>
+</body>
+</html>
