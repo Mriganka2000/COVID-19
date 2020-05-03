@@ -24,16 +24,16 @@
       </nav>
 	<div class="container">
 		<hr>
-		    <h1>Ask Your question by putting up a question in the platform</h1>
-			<form method="POST" action='createpost/'>
-			    <label for="">Enter title</label> <br> 
-			    <input class="search-box" type="text" name="title" id="" placeholder='Enter Question title'>  
-			    <br> <br>
-			    <label for="">Enter Description</label> <br> <input class="search-box" type="text" name="description" id="" placeholder="Enter Question  Description"> 
-			    <br> <br>
-			    <input class="btnn1" type="submit" value="Submit">
-			    <hr>
-			</form>
+	    <h1>Ask Your question by putting up a question in the platform</h1>
+		<form method="POST" action='createpost/'>
+		    <label for="">Enter title</label> <br> 
+		    <input class="search-box" type="text" name="title" id="" placeholder='Enter Question title'>  
+		    <br> <br>
+		    <label for="">Enter Description</label> <br> <input class="search-box" type="text" name="description" id="" placeholder="Enter Question  Description"> 
+		    <br> <br>
+		    <input class="btnn1" type="submit" value="Submit">
+		    <hr>
+		</form>
 	</div>
 	<div class="container">
 		<form action='searchbypostname/' method="GET">
@@ -41,22 +41,33 @@
 	        <button class="btnn2"><i class="fa fa-search"></i></button>
 		</form>
 		<br> <hr> <br>
-		<div class="post">
-			<h2> Title of the post is:- <i><u>{{post.title}}</u></i></h2> 
-			<h4> Description of the post is:-  <i><u>{{post.description}}</u></i></h4> 
-			<h4> Posted by:-  <i><u>{{post.user.user.username}}</u></i></h4> 
+		<div class="container">
+			<div class="design">
+				<div class="card border-primary mb-3" style="width: 50rem;">
+				  <div class="card-body">
+				    <h3 class="card-subtitle mb-2 text-muted" style="font-family: 'Fira Sans Condensed', sans-serif;">Post Title</h3>
+				    <p class="card-text" style="font-family: 'Fira Sans Condensed', sans-serif;"> Description of the post.</p>
+				    <h4 class="card-text"><small class="text-muted">Posted By </small></h4>
+				    <a href="#" class="btn btn-warning">Answer the post</a>
+				    <a href="#" class="btn btn-primary">View replies</a>
+				 </div>
+				</div>
+			</div>
 		</div>
-		<br>
-		<button class="search-box2"><a href="#">Answer this post</a></button>
-		<button class="search-box3"><a href="#"> View Replies <a></button>
 		<br> <br>
 		<div class="container">
-			<div class="post">
-				<h2> {{reply.reply}} <br> it got {{reply.upvote}} no of upvotes and <br> {{reply.downvote}} no of downvotes <h2>
+			<div class="design">
+				<div class="card border-primary mb-3" style="width: 50rem;">
+					<div class="card-body">
+					    <h3 class="card-subtitle mb-2 text-muted" style="font-family: 'Fira Sans Condensed', sans-serif;">Description of the reply</h3>
+					    <p class="card-text" style="font-family: 'Fira Sans Condensed', sans-serif;"> Upvote gets 21.</p>
+					    <p class="card-text" style="font-family: 'Fira Sans Condensed', sans-serif;"> Downpvote gets 2.</p>
+					    <h4 class="card-text"><small class="text-muted">Posted By </small></h4>
+					    <button class="btnn3"><a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i><a></button>
+						<button class="btnn4"><a href="#"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a></button>
+					</div>
+				</div>
 			</div>
-			<br>
-			<button class="btnn3"><a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i><a></button>
-			<button class="btnn4"><a href="#"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a></button>
 		</div>
 		<br> <hr> <br>
 		<div>
@@ -68,7 +79,8 @@
 			</form>
 		</div>
 	</div>
-
+	<hr>
+	<br>
 	<hr>
 </body>
 </html>
