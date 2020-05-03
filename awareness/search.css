@@ -92,8 +92,8 @@ ul {
 }
 
 .btnn3 {
-  border: 3px solid #e84118; 
-  background-color: #e84118;
+  border: 3px solid rgba(52, 152, 219,1.0); 
+  background-color: rgba(52, 152, 219,1.0);
   height: 50px;
   width: 50px;
   border-radius: 50px;
@@ -108,12 +108,12 @@ ul {
 }
 
 .btnn3:hover .fa{
-  color: #e84118;
+  color: rgba(52, 152, 219,1.0);
 }
 
 .btnn4 {
-  border: 3px solid #273c75; 
-  background-color: #273c75;
+  border: 3px solid rgba(241, 196, 15,1.0); 
+  background-color: rgba(241, 196, 15,1.0);
   height: 50px;
   width: 50px;
   border-radius: 50px;
@@ -128,5 +128,18 @@ ul {
 }
 
 .btnn4:hover .fa{
-  color: #273c75;
+  color: rgba(241, 196, 15,1.0);
 }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px 0 rgba(127, 140, 141,1.0);
+}
+
+/*.container {
+  padding: 2px 16px;
+}*/
