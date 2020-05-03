@@ -6,12 +6,32 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-	<form class="container" method = 'POST'>
-        <input type="radio" name="user_type" id="" value = "Shopkeeper"> Shopkeeper
-        <input type="radio" name="user_type" id="" value="Doctor"> Doctor
-        <input type="radio" name="user_type" id="" value="Normal_User"> Normal_User
-        <input class="btnn" type="submit" value="Submit">
-    </form>
-    <h1>Login First</h1>
+	<div class="mainbody">
+        <div class="loginboxuser">
+            <img src="img.png" class="image">
+            <div class="container2">
+                <form method='POST'>
+                    <h5>Enter what kind of user you are:- </h5> <br>
+                    <label class="containerradio">
+                        <input type="radio" name="user_type" checked="checked" value=Grocery id="" > Shopkeeper 
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="containerradio">
+                        <input type="radio" name="user_type" checked="checked" value = Medical-Store id=""> Doctor
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="containerradio">
+                        <input type="radio" name="user_type" checked="checked" value= "Food" id=""> Normal User
+                        <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>   
+            </div>   
+        </div>   
+    </div>
+    <!-- <h1>Login First</h1> -->
 </body>
 </html>
+
+
