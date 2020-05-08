@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lemonada:wght@700&display=swap');
 
 body {
-  background: #ecf0f1;
+  background: url(img3.jpg);
+  background-attachment: fixed;
   color: #333333;
   margin-top: 5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #444444;
+  color: #fff;
 }
 
 ul {
@@ -40,14 +41,18 @@ ul {
 }
 
 .btnn1 {
-  border: 3px solid #2c3e50; 
+  background-color: #eb2f06; 
   height: 40px;
   width: 100px;
   border-radius: 50px;
 }
 
+.btnn1[type = "submit"] {
+  color: #fff;
+}
+
 .btnn1:hover {
-  background-color: #2c3e50;
+  background-color: #c23616;
   color: #fff;
 }
 
